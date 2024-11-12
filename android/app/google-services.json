@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "219390634437",
+    "project_id": "mix-iseneca-incidencias",
+    "storage_bucket": "mix-iseneca-incidencias.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219390634437:android:9d4d58e976a577f2db03ac",
+        "android_client_info": {
+          "package_name": "es.iesjandula.iseneca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219390634437-k7vpdl1m7fhdmk43kqgoq11a3l5kkams.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBckw2xKR8jNIx-WZ8szP0tK38Hx9o3Hck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219390634437-k7vpdl1m7fhdmk43kqgoq11a3l5kkams.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
