@@ -29,6 +29,13 @@
             {
               "client_id": "219390634437-k7vpdl1m7fhdmk43kqgoq11a3l5kkams.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "219390634437-gn3hequ76thr8qlhuloaglnd3coaoctk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.iseneca"
+              }
             }
           ]
         }

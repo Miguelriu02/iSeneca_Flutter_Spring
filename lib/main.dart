@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iseneca/firebase_options.dart';
+import 'package:iseneca/providers/issues_provider.dart';
 import 'package:iseneca/providers/alumno_provider.dart';
 import 'package:iseneca/providers/providers.dart';
 
@@ -9,6 +10,7 @@ import 'package:iseneca/screens/convivencia/reflexion_screen.dart';
 import 'package:iseneca/screens/convivencia/screen_expulsados.dart';
 import 'package:iseneca/screens/convivencia/comportamiento_alumno_screen.dart';
 import 'package:iseneca/screens/convivencia/carnet_screen.dart';
+import 'package:iseneca/screens/incidencias/issueScreen.dart';
 import 'package:iseneca/screens/screens.dart';
 import 'package:iseneca/service/services.dart';
 import 'package:provider/provider.dart';
@@ -77,6 +79,10 @@ class AppState extends StatelessWidget {
           create: (_) => DaceProvider(),
           lazy: false,
         ),
+        ChangeNotifierProvider(
+          create: (_) => IssuesProvider(),
+          lazy: false,
+        ),
       ],
       child: const MyApp(),
     );
@@ -99,6 +105,7 @@ class MyApp extends StatelessWidget {
         "main_screen": (BuildContext context) => const MainScreen(),
         "convivencia_screen": (BuildContext context) =>
             const ConvivenciaScreen(),
+        "incidencias_screen": (BuildContext context) => const IssueScreen(),
         "expulsados_screen": (BuildContext context) => const ExpulsadosScreen(),
         "mayores_screen": (BuildContext context) => const MayoresScreen(),
         "dace_screen": (BuildContext context) => const DaceScreen(),
@@ -110,7 +117,7 @@ class MyApp extends StatelessWidget {
         "horario_profesores_screen": (BuildContext context) =>
             const HorarioProfesoresScreen(),
         "horario_profesores_detalles_screen": (BuildContext context) =>
-            HorarioProfesoresDetallesScreen(),
+            const HorarioProfesoresDetallesScreen(),
         "alumnado_screen": (BuildContext context) => const AlumnadoScreen(),
         "contacto_alumnado_screen": (BuildContext context) =>
             const ContactoAlumnadoScreen(),

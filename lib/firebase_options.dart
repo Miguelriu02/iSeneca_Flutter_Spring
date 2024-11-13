@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,42 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBOYIsXnUVAEkrbKc5CQCjrp7z3zBcHvm8',
-    appId: '1:364563782587:web:97c77b35798e162e70829e',
-    messagingSenderId: '364563782587',
-    projectId: 'isenecafirebase-4a37f',
-    authDomain: 'isenecafirebase-4a37f.firebaseapp.com',
-    storageBucket: 'isenecafirebase-4a37f.appspot.com',
-    measurementId: 'G-W4RFKY5PHM',
+    apiKey: 'AIzaSyB_zFoNqUpXP6up0MtoieOy57Da2ra5FBY',
+    appId: '1:219390634437:web:476771abcaf90283db03ac',
+    messagingSenderId: '219390634437',
+    projectId: 'mix-iseneca-incidencias',
+    authDomain: 'mix-iseneca-incidencias.firebaseapp.com',
+    storageBucket: 'mix-iseneca-incidencias.firebasestorage.app',
+    measurementId: 'G-TBNELZXK2X',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDLELanYfNLZ8Po_UUya6KWafH5HILh_ZI',
-    appId: '1:364563782587:android:fdcc091a59c827fc70829e',
-    messagingSenderId: '364563782587',
-    projectId: 'isenecafirebase-4a37f',
-    storageBucket: 'isenecafirebase-4a37f.appspot.com',
+    apiKey: 'AIzaSyBckw2xKR8jNIx-WZ8szP0tK38Hx9o3Hck',
+    appId: '1:219390634437:android:9d4d58e976a577f2db03ac',
+    messagingSenderId: '219390634437',
+    projectId: 'mix-iseneca-incidencias',
+    storageBucket: 'mix-iseneca-incidencias.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB0xEYXvQOtsEYB3XRrru7L67diWXbOroc',
-    appId: '1:364563782587:ios:c50bb2da72da550870829e',
-    messagingSenderId: '364563782587',
-    projectId: 'isenecafirebase-4a37f',
-    storageBucket: 'isenecafirebase-4a37f.appspot.com',
-    androidClientId: '364563782587-8cgsee9ttfpl7s7rh43tfmqlvoi7mjru.apps.googleusercontent.com',
-    iosClientId: '364563782587-vneovs546pi9vk2f36gnj85d82cd2a6g.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDnNp3jznEP4l4lLIo3GsuGzcmSr99sdlo',
+    appId: '1:219390634437:ios:1ad9d257c9f7aa00db03ac',
+    messagingSenderId: '219390634437',
+    projectId: 'mix-iseneca-incidencias',
+    storageBucket: 'mix-iseneca-incidencias.firebasestorage.app',
+    iosClientId: '219390634437-gn3hequ76thr8qlhuloaglnd3coaoctk.apps.googleusercontent.com',
     iosBundleId: 'com.example.iseneca',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB0xEYXvQOtsEYB3XRrru7L67diWXbOroc',
-    appId: '1:364563782587:ios:b90321f01908c5cf70829e',
-    messagingSenderId: '364563782587',
-    projectId: 'isenecafirebase-4a37f',
-    storageBucket: 'isenecafirebase-4a37f.appspot.com',
-    androidClientId: '364563782587-8cgsee9ttfpl7s7rh43tfmqlvoi7mjru.apps.googleusercontent.com',
-    iosClientId: '364563782587-lavsm6d2oe27nqbf2r7h1rgokmcrnp13.apps.googleusercontent.com',
-    iosBundleId: 'com.example.iseneca.RunnerTests',
+    apiKey: 'AIzaSyDnNp3jznEP4l4lLIo3GsuGzcmSr99sdlo',
+    appId: '1:219390634437:ios:1ad9d257c9f7aa00db03ac',
+    messagingSenderId: '219390634437',
+    projectId: 'mix-iseneca-incidencias',
+    storageBucket: 'mix-iseneca-incidencias.firebasestorage.app',
+    iosClientId: '219390634437-gn3hequ76thr8qlhuloaglnd3coaoctk.apps.googleusercontent.com',
+    iosBundleId: 'com.example.iseneca',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyB_zFoNqUpXP6up0MtoieOy57Da2ra5FBY',
+    appId: '1:219390634437:web:476771abcaf90283db03ac',
+    messagingSenderId: '219390634437',
+    projectId: 'mix-iseneca-incidencias',
+    authDomain: 'mix-iseneca-incidencias.firebaseapp.com',
+    storageBucket: 'mix-iseneca-incidencias.firebasestorage.app',
+    measurementId: 'G-TBNELZXK2X',
+  );
+
 }

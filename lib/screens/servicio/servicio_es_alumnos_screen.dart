@@ -118,14 +118,14 @@ class _ServicioESAlumnosScreenState extends State<ServicioESAlumnosScreen> {
                               backgroundColor: Colors.blue,
                               child: Text(
                                 listadoAlumnos[index].name[0],
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
                           const SizedBox(width: 15),
                           Expanded(
                             child: Text(
-                              '${listadoAlumnos[index].name}',
+                              listadoAlumnos[index].name,
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
