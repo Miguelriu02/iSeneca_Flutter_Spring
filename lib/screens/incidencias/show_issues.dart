@@ -16,7 +16,7 @@ class ShowIssuesScreen extends StatelessWidget {
         title: const Text('Lista de Incidencias'),
       ),
       body: FutureBuilder(
-        future: issuesProvider.provideIssues(),
+        future: issuesProvider.showIssues(),
         builder: (context, snapshot)
         {
           if (issuesProvider.issuesList.isEmpty) {

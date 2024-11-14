@@ -5,6 +5,7 @@ void main() => runApp(const IssuesScreenAdmin());
 class IssuesScreenAdmin extends StatelessWidget {
   const IssuesScreenAdmin({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +20,6 @@ class IssuesScreenAdmin extends StatelessWidget {
               child: Column(
                 children: [
                   Text('Listado de Incidencias'),
-                  // Aquí iría el widget que muestra el listado
                 ],
               ),
             ),
@@ -30,7 +30,7 @@ class IssuesScreenAdmin extends StatelessWidget {
                   // Campos de filtro
                   DropdownButton<String>(
                     hint: const Text('Estado'),
-                    items: <String>['Abierto', 'Cerrado', 'En Progreso']
+                    items: <String>['PENDIENTE', 'EN_CURSO', 'FINALIZADO', 'CANCELADO']
                         .map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,

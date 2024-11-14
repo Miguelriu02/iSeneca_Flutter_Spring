@@ -8,7 +8,7 @@ class IssuesProvider extends ChangeNotifier
 
   final getIssues = GetIssuesModel();
 
-  Future <void> provideIssues() async
+  Future <void> showIssues() async
   {
     final issues = await getIssues.getIssues();
 
