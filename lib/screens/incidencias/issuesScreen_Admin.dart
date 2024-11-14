@@ -9,10 +9,11 @@ class IssuesScreenAdmin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      title: 'Admin Issues',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Material App Bar'),
+          title: const Text('Admin Incidencias'),
         ),
         body: Row(
           children: [
