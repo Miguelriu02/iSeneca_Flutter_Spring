@@ -10,7 +10,8 @@ import 'package:iseneca/screens/convivencia/reflexion_screen.dart';
 import 'package:iseneca/screens/convivencia/screen_expulsados.dart';
 import 'package:iseneca/screens/convivencia/comportamiento_alumno_screen.dart';
 import 'package:iseneca/screens/convivencia/carnet_screen.dart';
-import 'package:iseneca/screens/incidencias/issueScreen.dart';
+import 'package:iseneca/screens/incidencias/issuesScreen.dart';
+import 'package:iseneca/screens/incidencias/issuesScreen_Admin.dart';
 import 'package:iseneca/screens/screens.dart';
 import 'package:iseneca/service/services.dart';
 import 'package:provider/provider.dart';
@@ -106,6 +107,7 @@ class MyApp extends StatelessWidget {
         "convivencia_screen": (BuildContext context) =>
             const ConvivenciaScreen(),
         "incidencias_screen": (BuildContext context) => const IssueScreen(),
+        "incidencias_admin_screen": (BuildContext context) => const IssuesScreenAdmin(),
         "expulsados_screen": (BuildContext context) => const ExpulsadosScreen(),
         "mayores_screen": (BuildContext context) => const MayoresScreen(),
         "dace_screen": (BuildContext context) => const DaceScreen(),

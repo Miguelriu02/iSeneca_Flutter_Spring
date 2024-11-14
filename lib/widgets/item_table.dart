@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:iseneca/widgets/widgets.dart';
 
@@ -35,7 +36,7 @@ class ItemTable extends StatelessWidget {
             child: const SingleCard(icon: "assets/calendario.png", text: "Baño"),
           ),
           GestureDetector(
-            onTap: () => Navigator.pushNamed(context, "incidencias_screen"),
+            onTap: () => '${FirebaseAuth.instance.currentUser?.email}' == 'miguelriu.dev@gmail.com' ? Navigator.pushNamed(context, "incidencias_admin_screen") : Navigator.pushNamed(context, "incidencias_screen"),
             child: const SingleCard(icon: "assets/issue.png", text: "Incidencia"),
           ),
         ])
